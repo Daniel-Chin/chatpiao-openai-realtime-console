@@ -1,13 +1,19 @@
+:root {
+  --chat-piano-lr-ratio: 70%;
+}
+
 [data-component='ConsolePage'] {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-style: normal;
   font-size: 12px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  // display: flex;
+  // flex-direction: column;
+  // overflow: hidden;
   margin: 0px 8px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
   & > div {
     flex-shrink: 0;
   }
@@ -34,6 +40,8 @@
   }
 
   .content-main {
+    width: calc(100% - var(--chat-piano-lr-ratio));
+    height: 100%;
     flex-grow: 1;
     flex-shrink: 1 !important;
     margin: 0px 16px;
@@ -113,8 +121,8 @@
     }
     .content-logs {
       flex-grow: 1;
-      display: flex;
-      flex-direction: column;
+      // display: flex;
+      // flex-direction: column;
       overflow: hidden;
       & > div {
         flex-grow: 1;
@@ -132,13 +140,14 @@
       }
       .events {
         border-top: 1px solid #e7e7e7;
+        height: 45%;
       }
       .conversation {
         display: flex;
         flex-shrink: 0;
         width: 100%;
         overflow: hidden;
-        height: 80%;
+        height: 45%;
         min-height: 0;
         border-top: 1px solid #e7e7e7;
       }
@@ -276,4 +285,18 @@
       }
     }
   }
+}
+
+.chat-piano-LR-box {
+  width: 100%;
+  height: calc(100vh - var(--chat-piano-header-height));
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-piano-diagram {
+  width: var(--chat-piano-lr-ratio);
+  height: 100%;
+  object-fit: contain;
 }

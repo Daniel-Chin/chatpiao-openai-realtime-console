@@ -1,5 +1,16 @@
+:root {
+  --chat-piano-header-height: 15vh;
+}
+
 [data-component='App'] {
   height: 100%;
   width: 100%;
   position: relative;
+}
+
+.chat-piano-header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  height: var(--chat-piano-header-height);
 }

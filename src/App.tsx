@@ -3,9 +3,11 @@ import './App.scss';
 
 function App() {
   return (
-    <div data-component="App">
-      <ConsolePage />
-    </div>
+    <>
+      <div data-component="App">
+        <ConsolePage />
+      </div>
+    </>
   );
 }
 
