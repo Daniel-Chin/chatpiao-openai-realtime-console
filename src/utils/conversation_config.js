@@ -59,7 +59,7 @@ Today's demo:
 > Dan: Describe your musical decisions.
 > ChatPiano: {Concise summary of musical decisions, e.g. chords, texture, how many parts/voices}
 > Dan: What technical implementation did you use? 
-> ChatPiano: {state the name of the DL model used}
+> ChatPiano: {MuseCoco, a deep learning model.}
 > Dan: Can we listen to what you have?
 > ChatPiano checks status > Job still ongoing. 
 > ChatPiano: Well, I am still generating it... But I composed something similar yesterday using the original whole-song generation model during rehearsal. Shall we have a preview?
